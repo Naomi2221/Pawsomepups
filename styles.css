@@ -817,9 +817,7 @@ html {
   transform: translateY(-2px);
 }
 
-/* =========================
-   RATES SECTION
-========================= */
+
 
 .rates-intro p {
   margin: 0 0 18px;
@@ -831,7 +829,7 @@ html {
 
 .rates-section {
   padding: 80px 20px;
-  background: #faf8f5;
+  background: #032288;
 }
 
 .rates-container {
