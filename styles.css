@@ -1828,6 +1828,31 @@ body {
   opacity: 0.75;
 }
 
+.rate-card h3 {
+  font-size: 21px;
+}
+
+.rate-card > p {
+  font-size: 17px;
+}
+
+.price small {
+  font-size: 15px;
+}
+
+.rate-detail strong {
+  font-size: 17px;
+}
+
+.rate-detail span,
+.discount span {
+  font-size: 15px;
+}
+
+.rate-note p {
+  font-size: 14px;
+}
+
 @media (max-width: 480px) {
   .title h2,
   .rates-heading h2 {
@@ -1855,6 +1880,28 @@ body {
   .step-card p,
   .contact-info p {
     font-size: 15px;
+  }
+
+  .rate-card h3 {
+    font-size: 19px;
+  }
+
+  .rate-card > p {
+    font-size: 16px;
+  }
+
+  .price small,
+  .rate-detail span,
+  .discount span {
+    font-size: 14px;
+  }
+
+  .rate-detail strong {
+    font-size: 16px;
+  }
+
+  .rate-note p {
+    font-size: 14px;
   }
 
 }
