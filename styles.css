@@ -1208,7 +1208,7 @@ html {
   color: #333;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 14px;
   max-width: 100%;
   margin: 10px;
   padding: 15px 25px;
@@ -1218,8 +1218,13 @@ html {
 
 .contact-info-icon {
   flex: 0 0 auto;
+  margin-right: 4px;
   color: #111;
   font-size: 15px;
+}
+
+.contact-info strong {
+  margin-right: 4px;
 }
 
 @media (max-width: 480px) {
