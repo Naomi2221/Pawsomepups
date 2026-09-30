@@ -99,56 +99,67 @@
       </div>
   </div>
 
-    <div class="title"><h2>Testimonials</h2></div>
+    <div class="title"><h2>Google Reviews</h2></div>
 
-<div class="testimonial-section">
-  <button class="testimonial-arrow testimonial-prev" aria-label="Previous testimonial">
+<div class="google-review-summary" aria-label="Google rating: 5 out of 5 stars from 14 reviews">
+  <span class="google-review-rating">5.0</span>
+  <span class="google-review-stars" aria-hidden="true">★★★★★</span>
+  <span class="google-review-count">Based on 14 Google reviews</span>
+</div>
+
+<div class="testimonial-section" aria-label="Google customer reviews">
+  <button class="testimonial-arrow testimonial-prev" type="button" aria-label="Previous Google review">
     <i class="fas fa-chevron-left"></i>
   </button>
   
-  <div class="testimonial-slider">
-    <div class="testimonial-slide is-active">
+  <div class="testimonial-slider" aria-live="polite">
+    <div class="testimonial-slide is-active" role="group" aria-roledescription="slide" aria-label="Review 1 of 3">
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Would definitely recommend Pawsome Pups Doggy Daycare. Misty is always so excited when she arrives and sees all her friends. Your dog is in good hands."</p>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>Fantastic day care and Bongani is brilliant with the dogs! They have a great time with friends, and come home tired at the end of the day, which is saying something for Pointers! It's a big relief and help to know my fur babies are in good care during the day. Would highly recommend Pawsome Pups!</blockquote>
+          <p class="testimonial-author">Tricia Scott <span>Google review · 7 months ago</span></p>
         </div>
       </div>
     </div>
 
-    <div class="testimonial-slide">
+    <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Review 2 of 3">
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Absolutely amazing. Home from home. Looked after as if they were their own. Highly recommended!❤ Well done Pawsome Pups team!👏🏻❤❤🐶"</p>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>We are in awe of Bongani and the care and love that he and the Pawsome pups team have for the pups, we have taken our 3 month old puppy to Pawsome pups for day care and just picked her up after boarding at Pawsome pups for 3 days - she didn’t want to leave, and while we were away Bongani sent kind updates on how our lil pup was doing. Thank you for all the energy and effort Pawsome pups, we feel so lucky to be able to bring little JoJo to you for care ❤️</blockquote>
+          <p class="testimonial-author">Kelly Blair <span>Google review · 2 months ago</span></p>
         </div>
       </div>
     </div>
 
-    <div class="testimonial-slide">
+    <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Review 3 of 3">
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Our pup absolutely LOVES going to Pawsome, and Bongani is brilliant with her and managing the dynamics of an ever changing pack of dogs. Cecelia and team are also so accommodating, often dealing with our last minute requests with such understanding. The facilities are also great, with plenty space to play inside and outside, and the option to separate dogs if need be. We also appreciate the videos Bongani sends of our pup having fun with her friends. Highly recommend!"</p>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>Cannot recommend highly enough! Our pup had anxiety issues and was not a very playful girl. After going for about 8 months already, she practically jumps out the car when she sees Bongani and her confidence has grown leaps and bounds! She is now also super playful and will chase after a ball which she never did after we adopted her. Not only is the socialising great for her but, the changes in her behaviour has been amazing too!</blockquote>
+          <p class="testimonial-author">Dene' Visagie <span>Google review · 7 months ago</span></p>
         </div>
       </div>
     </div>
   </div>
 
-  <button class="testimonial-arrow testimonial-next" aria-label="Next testimonial">
+  <button class="testimonial-arrow testimonial-next" type="button" aria-label="Next Google review">
     <i class="fas fa-chevron-right"></i>
   </button>
 </div>
 
 <div class="testimonial-pagination">
   <div class="testimonial-dots" aria-label="Testimonial slider controls">
-    <button class="testimonial-dot is-active" data-slide="0" aria-label="Show testimonial 1"></button>
-    <button class="testimonial-dot" data-slide="1" aria-label="Show testimonial 2"></button>
-    <button class="testimonial-dot" data-slide="2" aria-label="Show testimonial 3"></button>
+    <button class="testimonial-dot is-active" type="button" data-slide="0" aria-label="Show Google review 1" aria-current="true"></button>
+    <button class="testimonial-dot" type="button" data-slide="1" aria-label="Show Google review 2"></button>
+    <button class="testimonial-dot" type="button" data-slide="2" aria-label="Show Google review 3"></button>
   </div>
 </div>
 
-<div class=".reviews">
-<a href="https://share.google/9QMCoVnXkXEgv7J9h" target="_blank" rel="noopener">
-    ⭐ See our Google Reviews
-</a></div>
+<div class="google-reviews-link-wrap">
+  <a class="google-reviews-link" href="https://www.google.com/maps/place/Pawsome+Pups+Doggy+Daycare/@-26.1059293,28.0147412,17z/data=!3m1!4b1!4m6!3m5!1s0x1e95756e0933f67d:0x14cd78fa267a6441!8m2!3d-26.1059293!4d28.0147412!16s%2Fg%2F11vzflrpwc?entry=ttu" target="_blank" rel="noopener noreferrer">Read all Google reviews</a>
+</div>
 
   <div class="title"><h2>Contact Us</h2></div>
   <div class="contact-section" id="contact">
@@ -235,6 +246,7 @@
 
         testimonialDots.forEach(function(dot, i) {
           dot.classList.toggle('is-active', i === index);
+          dot.setAttribute('aria-current', i === index ? 'true' : 'false');
         });
       }
 
