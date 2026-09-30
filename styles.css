@@ -1213,6 +1213,12 @@ html {
   border-radius: 5px;
 }
 
+.contact-info-icon {
+  margin-right: 8px;
+  color: #111;
+  font-size: 15px;
+}
+
 @media (max-width: 480px) {
   .contact-info p {
     display: block;
@@ -1743,5 +1749,110 @@ html {
     display: flex;
     top: 100%;
   }
+}
+
+/* Shared typography and compact contact icon styling */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.title h2,
+.rates-heading h2 {
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.about-copy h3,
+.product-card h3,
+.facility-card h3,
+.rate-card h3,
+.contact-page-card h3,
+.doc-card h3,
+.step-card h3 {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.about-copy p,
+.services-page-intro p,
+.product-card p,
+.rates-intro p,
+.rate-card > p,
+.contact-section p,
+.booking-intro p,
+.doc-card p,
+.step-card p,
+.contact-info p {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-section {
+  font-family: inherit;
+}
+
+.contact-page-actions .booking-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contact-page-actions .booking-button i {
+  color: #fff;
+  font-size: 15px;
+}
+
+.footer {
+  padding: 16px 20px;
+}
+
+.footer p {
+  margin: 6px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer .creator {
+  opacity: 0.75;
+}
+
+@media (max-width: 480px) {
+  .title h2,
+  .rates-heading h2 {
+    font-size: 24px;
+  }
+
+  .about-copy h3,
+  .product-card h3,
+  .facility-card h3,
+  .rate-card h3,
+  .contact-page-card h3,
+  .doc-card h3,
+  .step-card h3 {
+    font-size: 18px;
+  }
+
+  .about-copy p,
+  .services-page-intro p,
+  .product-card p,
+  .rates-intro p,
+  .rate-card > p,
+  .contact-section p,
+  .booking-intro p,
+  .doc-card p,
+  .step-card p,
+  .contact-info p {
+    font-size: 15px;
+  }
+
 }
 
