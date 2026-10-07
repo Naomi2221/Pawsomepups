@@ -209,9 +209,13 @@ html {
 }
 
 .hero-content h2 {
-  margin-top: 0;
-  font-size: 60px;
-  padding-bottom: 5px;
+  margin: 0 0 0;
+  font-size: 72px;
+  padding-bottom: 0;
+  font-family: 'Chewy', 'Segoe Print', 'Comic Sans MS', cursive;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 rgba(3, 45, 84, 0.35);
 }
 
 @media (max-width: 768px) {
@@ -227,8 +231,7 @@ html {
 }
 
 .hero-content p {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 0 16px;
   font-size: 30px;
 }
 
