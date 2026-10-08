@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -124,9 +124,10 @@ html {
   text-decoration: none;
   font-size: 18px;
   margin-left: 0;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
   min-height: 46px;
+  font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
 }
 
 .navbar a:hover,
@@ -641,6 +642,17 @@ html {
   text-align: center;
   margin: 0;
   padding: 18px 0;
+}
+
+.title h2,
+.home-page .title h2,
+.rates-heading h2 {
+  font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
+}
+
+.home-page .title {
+  background-color: transparent;
+  color: #1f1f1f;
 }
 
 @media (max-width: 768px) {
@@ -1772,14 +1784,25 @@ html {
 
 /* Shared typography and compact contact icon styling */
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
 
 .title h2,
+.rates-heading h2,
+.about-copy h3,
+.product-card h3,
+.facility-card h3,
+.rate-card h3,
+.contact-page-card h3,
+.doc-card h3,
+.step-card h3 {
+  font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
+}
+
+.title h2,
 .rates-heading h2 {
-  font-family: inherit;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.25;
@@ -1793,7 +1816,6 @@ body {
 .contact-page-card h3,
 .doc-card h3,
 .step-card h3 {
-  font-family: inherit;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.35;
