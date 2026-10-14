@@ -1991,7 +1991,7 @@ body {
   font-size: clamp(42px, 6vw, 76px);
   font-weight: 800;
   line-height: 1.08;
-  letter-spacing: -1.5px;
+  letter-spacing: 1px;
   text-shadow: 0 3px 18px rgba(0, 0, 0, 0.28);
 }
 
@@ -2120,8 +2120,12 @@ body {
   background: #172737;
 }
 
+.home-page .footer {
+  background-color: #000;
+}
+
 .facilities-gallery .facility-card img {
-  height: 300px;
+  height: 320px;
 }
 
 @media (max-width: 768px) {
@@ -2166,7 +2170,7 @@ body {
 
   .facilities-gallery .facility-card img {
     height: auto;
-    max-height: 300px;
+    max-height: 320px;
     object-fit: contain;
   }
 }
@@ -2186,7 +2190,7 @@ body {
 
   .home-page .hero-content h2 {
     font-size: 36px;
-    letter-spacing: -0.5px;
+    letter-spacing: 1px;
   }
 
   .home-page .hero-content p {
@@ -2215,7 +2219,7 @@ body {
 
   .facilities-gallery .facility-card img {
     height: auto;
-    max-height: 280px;
+    max-height: 300px;
     object-fit: contain;
   }
 }
