@@ -655,6 +655,11 @@ html {
   color: #1f1f1f;
 }
 
+.home-page .services-title,
+.home-page .services-section {
+  background-color: #f5f5f5;
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 22px;
@@ -1803,7 +1808,7 @@ body {
 
 .title h2,
 .rates-heading h2 {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 1.25;
   margin: 0;
@@ -1894,7 +1899,7 @@ body {
 @media (max-width: 480px) {
   .title h2,
   .rates-heading h2 {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .about-copy h3,
@@ -1942,5 +1947,275 @@ body {
     font-size: 14px;
   }
 
+}
+
+/* Homepage refresh */
+.home-page .header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  min-height: 76px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  box-shadow: 0 3px 18px rgba(24, 35, 48, 0.08);
+}
+
+.home-page .logo img {
+  max-height: 88px;
+}
+
+.home-page .navbar a {
+  border-radius: 999px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.home-page .navbar a:hover {
+  background-color: #edf4fb;
+  color: #1559a8;
+}
+
+.home-page .hero-section {
+  height: min(72vh, 700px);
+  min-height: 480px;
+  background: #273039;
+}
+
+.home-page .hero-content {
+  width: min(100% - 36px, 900px);
+  padding: 30px 24px;
+}
+
+.home-page .hero-content h2 {
+  margin-bottom: 12px;
+  font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.28);
+}
+
+.home-page .hero-content p {
+  margin: 0 0 26px;
+  font-size: clamp(18px, 2.2vw, 26px);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.home-page .hero-book-btn,
+.home-page .service-view-btn,
+.home-page .google-reviews-link {
+  background: #1768c4;
+  box-shadow: 0 8px 22px rgba(23, 104, 196, 0.24);
+}
+
+.home-page .hero-book-btn:hover,
+.home-page .service-view-btn:hover,
+.home-page .google-reviews-link:hover {
+  background: #12539d;
+}
+
+.home-page .about-section {
+  max-width: none;
+  margin: 0;
+  padding: 88px 24px;
+  border-radius: 0;
+  background: #fff;
+}
+
+.home-page .about-grid {
+  max-width: 1160px;
+  margin: 0 auto;
+  gap: clamp(32px, 6vw, 76px);
+}
+
+.home-page .about-image-placeholder {
+  height: clamp(300px, 38vw, 460px);
+  min-height: 0;
+  border-radius: 24px;
+  box-shadow: 0 18px 48px rgba(24, 35, 48, 0.14);
+}
+
+.home-page .about-image-placeholder img {
+  border-radius: inherit;
+}
+
+.home-page .about-copy h3 {
+  margin: 0 0 18px;
+  color: #182b3d;
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.2;
+}
+
+.home-page .about-copy p {
+  color: #52606d;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.home-page .services-title {
+  padding: 42px 18px 8px;
+}
+
+.home-page .services-section {
+  padding: 18px 24px 76px;
+  background-color: #f5f5f5;
+}
+
+.home-page .product-cards {
+  max-width: 1040px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 28px;
+}
+
+.home-page .product-card {
+  flex: 1 1 320px;
+  max-width: 470px;
+  margin: 0;
+  padding: 14px 14px 24px;
+  border: 1px solid rgba(24, 43, 61, 0.06);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 12px 34px rgba(24, 43, 61, 0.08);
+}
+
+.home-page .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 42px rgba(24, 43, 61, 0.14);
+}
+
+.home-page .product-card img {
+  width: 100%;
+  height: clamp(190px, 23vw, 270px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+}
+
+.home-page .product-card h3 {
+  margin: 18px 10px 0;
+  color: #182b3d;
+  font-size: 23px;
+}
+
+.home-page .service-view-btn {
+  margin-top: 14px;
+}
+
+.home-page .google-review-summary {
+  padding-top: 40px;
+}
+
+.home-page .testimonial-card {
+  border: 1px solid rgba(24, 43, 61, 0.06);
+  box-shadow: 0 14px 38px rgba(24, 43, 61, 0.1);
+}
+
+.home-page .testimonial-card:hover {
+  transform: translateY(-4px);
+}
+
+.home-page .contact-section {
+  background: #172737;
+}
+
+.facilities-gallery .facility-card img {
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .home-page .header {
+    min-height: 72px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .home-page .logo img {
+    max-height: 68px;
+  }
+
+  .home-page .hero-section {
+    height: 550px;
+    min-height: 0;
+  }
+
+  .home-page .about-section {
+    padding: 56px 22px;
+  }
+
+  .home-page .about-grid {
+    gap: 28px;
+  }
+
+  .home-page .about-image-placeholder {
+    height: min(62vw, 380px);
+  }
+
+  .home-page .services-section {
+    padding: 14px 20px 52px;
+  }
+
+  .home-page .product-card {
+    flex-basis: min(100%, 520px);
+  }
+
+  .home-page .product-card img {
+    height: clamp(220px, 45vw, 300px);
+  }
+
+  .facilities-gallery .facility-card img {
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page .header {
+    min-height: 64px;
+  }
+
+  .home-page .logo img {
+    max-height: 58px;
+  }
+
+  .home-page .hero-section {
+    height: 480px;
+  }
+
+  .home-page .hero-content h2 {
+    font-size: 36px;
+    letter-spacing: -0.5px;
+  }
+
+  .home-page .hero-content p {
+    font-size: 17px;
+  }
+
+  .home-page .about-section {
+    padding: 42px 18px;
+  }
+
+  .home-page .about-image-placeholder {
+    height: 260px;
+  }
+
+  .home-page .services-title {
+    padding-top: 34px;
+  }
+
+  .home-page .services-section {
+    padding: 12px 16px 42px;
+  }
+
+  .home-page .product-card img {
+    height: 220px;
+  }
+
+  .facilities-gallery .facility-card img {
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+  }
 }
 
