@@ -829,8 +829,9 @@ html {
 }
 
 .services-page-services {
-  padding-top: 24px;
-  padding-bottom: 36px;
+  background-color: #f5f5f5;
+  min-height: 520px;
+  padding: 36px 24px 72px;
 }
 
 .facilities-section {
@@ -951,7 +952,9 @@ html {
 }
 
 .rates-section {
-  padding: 80px 20px;
+  background-color: #f5f5f5;
+  min-height: 520px;
+  padding: 80px 20px 96px;
 }
 
 .rates-container {
