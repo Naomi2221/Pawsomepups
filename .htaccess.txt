@@ -1,0 +1,16 @@
+# Clean URLs: serve /about from about.html
+# Rename this file to .htaccess and place it in the site's root folder.
+
+# Stops Apache from guessing filenames, which can conflict with the rules below
+Options -MultiViews
+
+RewriteEngine On
+
+# 1. If someone requests /page.html directly, redirect to /page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s[^\s?]*\.html[\s?] [NC]
+RewriteRule ^(.*)\.html$ $1 [R=301,L,NE]
+
+# 2. Serve /page from page.html when that file exists (and it isn't a folder)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [L]

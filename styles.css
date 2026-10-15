@@ -127,12 +127,17 @@ html {
   font-weight: 700;
   line-height: 1.2;
   min-height: 46px;
+  border-radius: 999px;
+  transition: color 0.2s ease, background-color 0.2s ease;
   font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
 }
 
 .navbar a:hover,
-.nav-group a:hover {
-  background-color: #777;
+.nav-group a:hover,
+.navbar a.active,
+.nav-group a.active {
+  background-color: #edf4fb;
+  color: #1559a8;
 }
 
 .hero-section {
@@ -2167,12 +2172,6 @@ body {
   .home-page .product-card img {
     height: clamp(220px, 45vw, 300px);
   }
-
-  .facilities-gallery .facility-card img {
-    height: auto;
-    max-height: 320px;
-    object-fit: contain;
-  }
 }
 
 @media (max-width: 480px) {
@@ -2215,12 +2214,6 @@ body {
 
   .home-page .product-card img {
     height: 220px;
-  }
-
-  .facilities-gallery .facility-card img {
-    height: auto;
-    max-height: 300px;
-    object-fit: contain;
   }
 }
 
